@@ -1,0 +1,17 @@
+# Docker volumes / data
+data/
+certs/
+
+# Environment secrets
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
