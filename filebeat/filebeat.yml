@@ -6,6 +6,10 @@ filebeat.inputs:
 processors:
   - add_docker_metadata: ~
   - add_host_metadata: ~
+  - drop_event:
+      when:
+        equals:
+          container.name: logstash
 
 output.logstash:
   hosts: ["logstash:5044"]
